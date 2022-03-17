@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Create start telegram bot environment with telegram-framework",
   "main": "index.js",
+  "bin": {
+    "create-telegram-app": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/alexandrmaliovaniy/create-telegram-app/issues"
   },
-  "homepage": "https://github.com/alexandrmaliovaniy/create-telegram-app#readme"
+  "homepage": "https://github.com/alexandrmaliovaniy/create-telegram-app#readme",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "fs-extra": "^10.0.1"
+  }
 }
