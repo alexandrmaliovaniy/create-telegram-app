@@ -16,7 +16,7 @@ const typePath = typescript ? 'typescript' : 'javascript';
 const storagePath = storage ? storage : 'default';
 
 const loadPath = path.join(__dirname, typePath, storagePath);
-const savePath = path.join(process.env.PWD, src);
+const savePath = path.join(process.cwd(), src);
 
 fse.copySync(loadPath, savePath);
 
@@ -25,11 +25,4 @@ exec(`cd ${savePath} && npm install`, (error, stdout, stderr) => {
         console.log(`error: ${error.message}`);
         return;
     }
-    if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-    }
-    console.log(`stdout: ${stdout}`);
 });
-
-console.log("Done!");
