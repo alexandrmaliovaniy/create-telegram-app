@@ -1,7 +1,7 @@
 {
   "name": "create-telegram-app",
   "version": "1.0.0",
-  "description": "Create start telegram bot environment with telegram-framework",
+  "description": "Set up telegram bot environment with telegram-framework",
   "main": "index.js",
   "bin": {
     "create-telegram-app": "index.js"
@@ -9,6 +9,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "telegram",
+    "bot",
+    "framework",
+    "telegram-framework"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandrmaliovaniy/create-telegram-app.git"
