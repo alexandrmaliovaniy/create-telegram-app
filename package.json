@@ -1,6 +1,6 @@
 {
   "name": "create-telegram-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set up telegram bot environment with telegram-framework",
   "main": "index.js",
   "bin": {
